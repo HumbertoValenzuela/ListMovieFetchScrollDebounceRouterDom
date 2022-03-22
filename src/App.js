@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import ListaDeTareas from './components/ListaDeTareas';
+import ListaDePeliculas from './components/ListaDePeliculas';
 
+import { Routes, Route, Link, Navigate } from "react-router-dom";
+// import NotFound from './components/NotFound';
+import MoviesDetails from './pages/MoviesDetails';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      {/* <ListaDeTareas /> */}
+      {/* <ListaDePeliculas /> */}
+      <nav>
+        <Link to="/listatareas">Lista de Tareas</Link>
+      </nav>
+      <nav>
+        <Link to="/listapeliculas">Lista de Peliculas</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/listatareas" element={<ListaDeTareas />} />
+        <Route path="listapeliculas" element={<ListaDePeliculas />} />
+        <Route path="/listapeliculas/:movieid" element={<MoviesDetails />} />
+        <Route path="*" element={<Navigate replace to="/listapeliculas" />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </>
   );
 }
 

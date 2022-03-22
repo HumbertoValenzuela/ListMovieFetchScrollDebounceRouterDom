@@ -1,0 +1,12 @@
+.boton-contendor {
+  height: 20px;
+  width: 200px;
+  justify-content: center;
+  justify-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.boton-contendor:hover {
+  background-color: #f5f5f5;
+  color: #2f4f4f;
+}

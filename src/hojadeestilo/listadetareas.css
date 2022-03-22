@@ -1,0 +1,14 @@
+.tareas-listas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.tareas-lista-contenedor-ul {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  background-color: blueviolet;
+}
+
