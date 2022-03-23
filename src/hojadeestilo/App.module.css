@@ -1,0 +1,15 @@
+.menuMain { 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;  
+  background-color: rgb(74, 136, 190);
+}
+
+.linkBase {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #505350;
+}

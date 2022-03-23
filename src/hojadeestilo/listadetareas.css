@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2px;
+  align-items: center;
+  justify-items: center;
+  /* margin-top: 2px; */
 }
 
 .tareas-lista-contenedor-ul {

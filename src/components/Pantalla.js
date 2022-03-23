@@ -17,7 +17,7 @@ const Pantalla = (props) => {
       const respuesta = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({nombre})
+        body: JSON.stringify({ nombre })
       });
 
       const json = await respuesta.json();
@@ -28,7 +28,7 @@ const Pantalla = (props) => {
     }
     props.setActualizarState(true);
   }
-console.log(nombre);
+  console.log(nombre);
 
   return (
     <>
@@ -44,10 +44,14 @@ console.log(nombre);
           value={nombre}
           onChange={actualizarState}
         />
-        <button  type="submit" className='tarea-boton'>Agregar</button>
-
+        <button type="submit" className='tarea-boton'>Agregar</button>
 
       </form>
+      <section>
+        <h2>En Construccion</h2>
+        <p>FrontEnd: React.js V17, Fetch API (POST, DELETE)</p>
+        <p>BackEnd: Node.js, Express, MySql2 </p>
+      </section>
     </>
   )
 }
